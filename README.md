@@ -13,9 +13,10 @@ An ultra simple callback gateway for executing command on host
 ## Call method
 
 > The default token can be changed on `model.py`
+> 
 > For further authoritative methods, you can modify by yourself
 
-Provided there is a plugin `plugin.example.main` that contains:
+Provided there is a plugin named `plugin.example.main` that contains:
 
 ```python
 from model import BasePlugin
@@ -26,7 +27,7 @@ class Plugin(BasePlugin):
         return 'Hello world'
 ```
 
-and a bash file `plugin/example/bash` that contains:
+and a bash file named `plugin/example/bash.sh` that contains:
 
 ```bash
 echo Hello world from bash
